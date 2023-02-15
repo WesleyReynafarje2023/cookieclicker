@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useState } from 'react';
 import Header from "./Header"
 import InputTodo from "./InputTodo"
 import TodosList from "./TodosList"
 import CC from "./CC"
 import { v4 as uuidv4 } from "uuid"
+
+const count = 0
 
 const TodoContainer = () => {
   
@@ -80,13 +82,13 @@ const TodoContainer = () => {
   */
 
   const uCC = () => {
-    
+    count = 1;
   }
 
   return (
     <div className="container">
       <div className="inner">
-        <Header />
+        <Header title={count}/>
         <CC updateCookieCounter={uCC}/>
 
         
