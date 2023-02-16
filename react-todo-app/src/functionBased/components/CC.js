@@ -4,15 +4,19 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import c from "./Cookie.png"
+
 
 
 
 const TodoContainer = props => {
-
         return (
           <ul>
-          <TouchableOpacity>
+          <TouchableOpacity 
+          onPress = {() => {
+            props.uCC()
+            }
+          }
+          >
           
             <Image
               source={{

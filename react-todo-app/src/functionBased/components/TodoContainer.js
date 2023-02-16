@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Header from "./Header"
-import InputTodo from "./InputTodo"
-import TodosList from "./TodosList"
+//import InputTodo from "./InputTodo"
+//import TodosList from "./TodosList"
 import CC from "./CC"
-import { v4 as uuidv4 } from "uuid"
-
-const count = 0
+//import { v4 as uuidv4 } from "uuid"
 
 const TodoContainer = () => {
   
@@ -81,15 +79,18 @@ const TodoContainer = () => {
 
   */
 
+  const [count, setCount] = useState(0);
+
   const uCC = () => {
-    count = 1;
+    console.log("clicked!")
+    setCount(count + 1);
   }
 
   return (
     <div className="container">
       <div className="inner">
-        <Header title={count}/>
-        <CC updateCookieCounter={uCC}/>
+        <Header cC={count}/>
+        <CC uCC={uCC}/>
 
         
       </div>

@@ -1,18 +1,16 @@
-import React, {useEffect}from "react"
+import React, {useEffect} from "react"
 import { Text } from 'react-native'
 
-const cookies = 0
-
 const Header = props => {
+
+  useEffect
+
   const headerStyle = {
     padding: "20px 0",
     lineHeight: "1.5em",
   }
-  
-  useEffect(() => {
-    cookies = props.count;
-  });
 
+  
   return (
     <header style={headerStyle}>
       <h1
@@ -38,7 +36,7 @@ const Header = props => {
           textAlign: "center",
         }}
       >
-        {cookies}
+        {cC}
         
       </Text>
       
