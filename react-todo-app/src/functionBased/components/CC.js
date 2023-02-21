@@ -36,11 +36,12 @@ const TodoContainer = props => {
 const styles = StyleSheet.create({
   buttonImageIconStyle: {
     padding: 10,
-    margin: 50,
+    margin: 80,
+    marginleft: 100,
     height: 400,
     width: 400,
     resizeMode: 'cover',
-    class: "center",
+    textalign: 'center'
   },
 });
 

@@ -1,6 +1,7 @@
 import React from "react"
+import { Text } from 'react-native'
 
-const Header = () => {
+const CookieCount = props => {
 
   
   const headerStyle = {
@@ -11,22 +12,23 @@ const Header = () => {
   
   return (
     <header style={headerStyle}>
-      <h1
+      <Text
         style={{
           fontSize: "6rem",
           fontWeight: "600",
           marginBottom: "2rem",
+          marginLeft: 220,
           lineHeight: "0.5em",
           color: "#00ffc8",
+          class: "center",
           textTransform: "lowercase",
           textAlign: "center",
         }}
       >
-      Cookies:
-      
-      </h1>
+        {props.cC}
+      </Text>
     </header>
   )
 }
 
-export default Header
+export default CookieCount
